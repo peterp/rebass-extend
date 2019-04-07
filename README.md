@@ -5,14 +5,15 @@
 This library allows you to easily add your own [style functions][styled-system-table]
 to the Rebass UI primitives.
 
-[![CircleCI][circle-ci]](https://circleci.com/gh/peterp/rebass-extend)
+[![CircleCI][circle-ci-badge]][circle-ci]
 [![Downloads][downloads-badge]][npm]
 [![Version][version-badge]][npm]
-[![MIT License][license-badge]](LICENSE)
+[![MIT License][license-badge]](LICENSE.md)
 
 [rebass]: https://rebassjs.org
 [styled-system-table]: https://styled-system.com/table
-[circle-ci]: https://circleci.com/gh/peterp/rebass-extend.svg?style=svg
+[circle-ci-badge]: https://flat.badgen.net/circleci/github/peterp/rebass-extend
+[circle-ci]: https://flat.badgen.net/circleci/github/peterp/rebass-extend
 [downloads-badge]: https://flat.badgen.net/npm/dw/rebass-extend
 [version-badge]: https://flat.badgen.net/npm/v/rebass-extend
 [license-badge]: https://flat.badgen.net/badge/license/MIT/blue
