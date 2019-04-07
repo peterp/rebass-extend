@@ -1,0 +1,72 @@
+{
+  "name": "rebass-extend",
+  "version": "1.0.0",
+  "description": "Rebass primitive UI components generator built with styled-system",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterp/rebass-factory.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "ui",
+    "design-system",
+    "styled-system",
+    "primitives",
+    "rebass"
+  ],
+  "author": "Peter Pistorius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterp/rebass-factory/issues"
+  },
+  "homepage": "https://github.com/peterp/rebass-factory#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "jest-styled-components": "^6.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "dependencies": {
+    "rebass": "^3.1.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist && babel src -d dist",
+    "test": "jest",
+    "test:watch": "yarn test --watchAll",
+    "size": "yarn build && npx bundlesize"
+  },
+  "babel": {
+    "presets": [
+      "@babel/react",
+      [
+        "@babel/env",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/*.test.js"
+    ],
+    "setupFilesAfterEnv": [
+      "jest-styled-components"
+    ]
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/*.js",
+      "maxSize": "1 kB"
+    }
+  ]
+}
