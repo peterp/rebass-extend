@@ -25,38 +25,20 @@ yarn add rebass rebass-extend
 
 ## Getting Started
 
-```jsx
+```js
 // src/lib/primitives.js
 
 import { extend } from "rebass-extend";
 import { display, minHeight, textAlign, fontStyle } from "styled-system";
 
-const {
-  Box,
-  Flex,
-  Text,
-  Heading,
-  Button,
-  Link,
-  Image,
-  Card
-} = extend({
+export const { Box, Flex, Text, Heading, Button, Link, Image, Card } = extend({
   Box: [display, minHeight, textAlign],
   Text: [fontStyle]
 });
-
-export Box;
-export Flex;
-export Text;
-export Heading;
-export Button;
-export Link;
-export Image;
-export Card;
 ```
 
-The `display` style function is added to `Box`, and all the components that extend it,
-like `Card`!
+The `display` style function is added to `Box`, and all the components that extend
+it, like `Card`!
 
 ```jsx
 // src/components/Badge.js
