@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Rebass primitive UI components generator built with styled-system",
   "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peterp/rebass-factory.git"
