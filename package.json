@@ -1,6 +1,6 @@
 {
   "name": "rebass-extend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rebass primitive UI components generator built with styled-system",
   "main": "dist/index.js",
   "files": [
