@@ -1,8 +1,12 @@
-# Rebass Extend 🏭
+# 🏭 Rebass Extend
 
-This utility function builds on two of [Rebass][rebass]' core principles of been _unopinionated,_ and _extensible_ by letting you easily define your own style props on [Rebass][rebass]' UI primitives.
+[Rebass][rebass] is an unopinionated and extensible set of React primitives.
+
+This library allows you to easily add your own [style functions][styled-system-table]
+to the Rebass UI primitives.
 
 [rebass]: https://rebassjs.org
+[styled-system-table]: https://styled-system.com/table
 
 ```sh
 yarn add rebass rebass-extend
@@ -10,13 +14,22 @@ yarn add rebass rebass-extend
 
 ## Getting Started
 
-```js
+```jsx
 // src/lib/primitives.js
 
 import { extend } from "rebass-extend";
 import { display, minHeight, textAlign, fontStyle } from "styled-system";
 
-const { Box, Flex, Text, Heading, Button, Link, Image, Card } = extend({
+const {
+  Box,
+  Flex,
+  Text,
+  Heading,
+  Button,
+  Link,
+  Image,
+  Card
+} = extend({
   Box: [display, minHeight, textAlign],
   Text: [fontStyle]
 });
@@ -31,8 +44,8 @@ export Image;
 export Card;
 ```
 
-The `display` style prop is added to `Box` so all the components that extend it,
-like `Card`.
+The `display` style function is added to `Box`, and all the components that extend it,
+like `Card`!
 
 ```jsx
 // src/components/Badge.js
