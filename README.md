@@ -1,6 +1,6 @@
 # Rebass Extend 🏭
 
-This utility function builds on two of [![Rebass][rebass]]' core principles of been _unopinionated,_ and _extensible_ by letting you easily define your own style props on [![Rebass][rebass]]' UI primitives.
+This utility function builds on two of [Rebass][rebass]' core principles of been _unopinionated,_ and _extensible_ by letting you easily define your own style props on [Rebass][rebass]' UI primitives.
 
 [rebass]: https://rebassjs.org
 
